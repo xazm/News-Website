@@ -3,9 +3,6 @@
     margin: 0px;
 }
 
-body {
-    background-color: black;
-}
 /* header */
 
 .header {
@@ -93,21 +90,22 @@ letter-spacing: -0.16px;
 /* Content */
 
 .content { 
-    width: auto;
-    height: 1097px;
+    margin: 50px auto;
+    width: 900px;
     background-color: #FFF;
     display: flex;
 }
 
 .items {
     display: grid;
-    grid-template-columns: 320px 320px 320px;
-    grid-template-rows: 300px 300px 300px; 
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 320px 320px 320px;
+    grid-template-rows: 300px 300px 300px;  */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     gap: 20px;
-    align-content: center;
-    justify-content: center;
+    /* align-content: center;
+    justify-content: center; */
 }
 
 /* card 1 */
@@ -116,19 +114,16 @@ letter-spacing: -0.16px;
     background-image: url(./asset/img1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
     border-radius: 6px;
+    width: 100%;
 }
 
 .cardInfo {
-    width: 320px;
-    padding: 10px 20px;
+    width: 100%;
     margin-top: 180px;
-    gap: 20px;
-    background: #F8F9FC;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    background: green;
+    padding: 10px 20px;
+    display: flex;
 }
 
 
@@ -144,8 +139,8 @@ p {
 
 .post {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
 }

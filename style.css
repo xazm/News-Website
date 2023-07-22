@@ -331,7 +331,7 @@ p {
 }
 
 .fa-regular.fa-heart.active {
-  color: blue;
+  color: red;
   cursor: pointer;
 }
 

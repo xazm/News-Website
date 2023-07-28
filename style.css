@@ -14,12 +14,11 @@
 }
 
 .logo {
-  color: var(--primary-yellow-01, #dcf10d);
+  color: #dcf10d;
   font-size: 24px;
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
-
   letter-spacing: 2.4px;
   width: 76px;
   height: 17px;
@@ -331,7 +330,7 @@ p {
 }
 
 .fa-regular.fa-heart.active {
-  color: red;
+  color: blue;
   cursor: pointer;
 }
 

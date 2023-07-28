@@ -1,0 +1,61 @@
+@mixin root() {
+  padding: 0px;
+  margin: 0px;
+}
+
+@mixin logo-style-layout() {
+  letter-spacing: 2.4px;
+  width: 76px;
+  height: 17px;
+  margin-left: 80px;
+  margin-top: 25px;
+}
+
+@mixin displayFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin navigatorStyle() {
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+@mixin logoText() {
+  font-size: 24px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  width: 76px;
+  height: 17px;
+  margin-left: 80px;
+  margin-top: 25px;
+}
+
+@mixin itemCard() {
+  border-radius: 6px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin cardInfo() {
+  width: 100%;
+  border-radius: 0px 0px 6px 6px;
+  position: relative;
+}
+
+@mixin defualtImg() {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 6px 6px 0px 0px;
+}

@@ -1,1 +1,78 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  width: auto;
+  height: 84px;
+  background-color: #192140;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #dcf10d;
+  font-size: 24px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700px;
+  letter-spacing: 2.4px;
+  width: 76px;
+  height: 17px;
+  margin-left: 80px;
+  margin-top: 25px;
+}
+
+.menu {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 60px;
+}
+
+.navigator {
+  text-align: center;
+  font-size: 16px;
+  align-items: flex-start;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  gap: 30px;
+}
+
+.signupField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 20px;
+}
+
+.signUp {
+  color: #9d9db5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700px;
+  line-height: 100%;
+  letter-spacing: -0.16px;
+}
+
+.logIn {
+  border-radius: 40px;
+  border: 1px solid #0266ff;
+  color: #0266ff;
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600px;
+  line-height: 100%;
+  letter-spacing: -0.16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 5px;
+}/*# sourceMappingURL=main.css.map */

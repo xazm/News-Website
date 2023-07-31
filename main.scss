@@ -67,3 +67,270 @@
   padding: 16px 20px;
   gap: 5px;
 }
+
+.blog {
+  color: variables.$secondaryColor_yellow;
+  text-decoration-line: underline;
+}
+
+// CONTENT //
+
+.content {
+  margin: 50px auto;
+  width: 900px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 30px;
+}
+
+/* item Card/Card info */
+
+.item-card {
+  border-radius: 6px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardInfo {
+  width: 100%;
+  border-radius: 0px 0px 6px 6px;
+  position: relative;
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.parent {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: variables.$aligningFlexStart;
+  justify-content: space-between;
+  height: 150px;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 0px 0px 6px 6px;
+  background: #f8f9fc;
+}
+
+p {
+  color: variables.$paragraphColor;
+  font-size: 20px;
+  font-family: Inter;
+  font-style: variables.$otherFontStyle;
+  font-weight: variables.$myLogoFontWeight;
+  line-height: 130%;
+  letter-spacing: -0.4px;
+}
+
+.postfield {
+  @include mixins.postFieldLayout();
+}
+
+.post {
+  @include mixins.postFieldLayout();
+}
+
+.line {
+  align-self: stretch;
+  width: 100%;
+  height: 1px;
+  background-color: variables.$borderColor;
+}
+
+.dateLikes {
+  display: flex;
+  justify-content: space-between;
+  align-items: variables.$alignCenter;
+  align-self: stretch;
+}
+
+.date {
+  display: flex;
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: variables.$alignCenter;
+  gap: 5px;
+  border-radius: 40px;
+  border: 1px solid #c0bfcf;
+}
+
+.child {
+  color: variables.$borderColor;
+  text-align: center;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: variables.$otherFontStyle;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.likesField {
+  display: flex;
+  align-items: variables.$alignCenter;
+  gap: 2px;
+}
+
+.fa-circle-xmark {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.fa-heart {
+  width: 100%;
+  height: 100%;
+  color: #9d9db5;
+}
+
+.likes {
+  color: variables.$borderColor;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: variables.$otherFontStyle;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.36px;
+}
+
+// FOOTER //
+
+.footer {
+  height: auto;
+  background: variables.$paragraphColor;
+}
+
+.footerBox {
+  display: flex;
+}
+
+.frame1 {
+  display: flex;
+  width: 630px;
+  flex-direction: column;
+  align-items: variables.$aligningFlexStart;
+  gap: 40px;
+  margin: 60px auto 60px 80px;
+}
+
+.tittle {
+  color: #fff;
+  font-size: 16px;
+  font-family: Inter;
+  font-style: variables.$otherFontStyle;
+  font-weight: variables.$myLogoFontWeight;
+  line-height: 130%;
+  letter-spacing: -0.32px;
+}
+
+.framebox {
+  display: flex;
+  flex-direction: column;
+  align-items: variables.$aligningFlexStart;
+  gap: 20px;
+}
+
+.menuChild {
+  display: flex;
+  align-items: variables.$aligningFlexStart;
+  gap: 20px;
+}
+
+.child1 {
+  color: #d7f8ff;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: variables.$otherFontStyle;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.36px;
+}
+
+.frame2 {
+  display: flex;
+  flex-direction: column;
+  align-items: variables.$aligningFlexStart;
+  margin: 60px 100px auto 90px;
+}
+
+.framebox2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: variables.$aligningFlexStart;
+  gap: 10px;
+}
+
+.tittle2 {
+  color: #fff;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: variables.$otherFontStyle;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.24px;
+}
+
+.socialNetwork {
+  display: flex;
+  align-items: variables.$aligningFlexStart;
+  gap: 15px;
+}
+
+.fa-brands {
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+}
+
+.frame3 {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 115px;
+}
+
+.framebox3 {
+  display: inline-flex;
+  align-items: variables.$aligningFlexStart;
+  gap: 10px;
+  opacity: 0.4000000059604645;
+}
+
+.fa-regular.fa-heart.active {
+  color: blue;
+  cursor: pointer;
+}
+
+.cardInfo:hover .fa-circle-xmark {
+  display: block;
+}
+
+.cardInfo:hover .read-icon {
+  display: block;
+}
+
+.fa-circle-xmark {
+  display: none;
+  position: absolute;
+  left: 250px;
+  top: 5px;
+  font-size: 24px;
+  color: #0266ff;
+  cursor: pointer;
+}
+
+.read-icon {
+  display: none;
+  cursor: pointer;
+}

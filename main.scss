@@ -21,7 +21,7 @@
   font-family: Inter;
   font-style: variables.$otherFontStyle;
   font-weight: variables.$myLogoFontWeight;
-  @include mixins.logo-style-layout();
+  @include mixins.logo-style-layout1();
 }
 
 .menu {
@@ -66,6 +66,10 @@
   @include mixins.displayFlex();
   padding: 16px 20px;
   gap: 5px;
+}
+
+.nav {
+  @include mixins.navigatorStyle();
 }
 
 .blog {
@@ -316,21 +320,160 @@ p {
   display: block;
 }
 
-.cardInfo:hover .read-icon {
-  display: block;
-}
-
 .fa-circle-xmark {
   display: none;
   position: absolute;
-  left: 250px;
+  right: 15px;
   top: 5px;
   font-size: 24px;
   color: #0266ff;
   cursor: pointer;
 }
+.cardInfo:hover .read-icon {
+  display: block;
+}
 
 .read-icon {
   display: none;
   cursor: pointer;
+}
+
+#circle-xmark {
+  display: none;
+}
+.btnBurger {
+  display: none;
+}
+
+.navContainer {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .content {
+    width: 100%;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    gap: 30px;
+  }
+
+  .img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  .btnBurger {
+    display: block;
+    color: variables.$primaryColor_blue;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .logo {
+    color: variables.$secondaryColor_yellow;
+    font-size: variables.$myLogoFontSize;
+    font-family: Inter;
+    font-style: variables.$otherFontStyle;
+    font-weight: variables.$myLogoFontWeight;
+    @include mixins.logo-style-layout2();
+  }
+
+  .menu {
+    display: none;
+  }
+  .header {
+    width: 100%;
+  }
+
+  .items {
+    margin: 40px 15px 60px 14px;
+  }
+
+  .frame1 {
+    margin: 40px 0px 0px 15px;
+    width: 100%;
+  }
+
+  .footerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blogChild {
+    flex-direction: column;
+    gap: 10px;
+    align-self: stretch;
+    display: flex;
+    align-items: variables.$aligningFlexStart;
+  }
+
+  .frame2 {
+    margin: 40px 0px 0px 15px;
+    width: 100%;
+  }
+  .framebox2 {
+    width: 100%;
+  }
+  .socialNetwork {
+    width: 100%;
+  }
+
+  .frame3 {
+    margin: 40px 0px 40px 0px;
+  }
+
+  .signupField {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .logIn {
+    height: 15px;
+  }
+
+  .navItem {
+    transition: 0.7s ease;
+  }
+  .navItem:hover {
+    background-color: variables.$primaryColor_blue;
+  }
+  .navContainer {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60%;
+    height: 100%;
+    background-color: variables.$paragraphColor;
+    opacity: 90%;
+  }
+
+  .navItems {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #d7f8ff;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    // font-weight: 400;
+  }
+  #circle-xmark {
+    font-size: 30px;
+    color: variables.$borderColor;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-weight: 1px;
+  }
 }

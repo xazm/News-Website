@@ -3,11 +3,18 @@
   margin: 0px;
 }
 
-@mixin logo-style-layout() {
+@mixin logo-style-layout1() {
   letter-spacing: 2.4px;
   width: 76px;
   height: 17px;
   margin-left: 80px;
+  margin-top: 25px;
+}
+@mixin logo-style-layout2() {
+  letter-spacing: 2.4px;
+  width: 76px;
+  height: 17px;
+  margin-left: 14px;
   margin-top: 25px;
 }
 
@@ -24,6 +31,7 @@
   color: #fff;
   display: flex;
   gap: 30px;
+  text-decoration: none;
 }
 
 @mixin itemCard() {

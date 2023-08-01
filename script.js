@@ -39,3 +39,23 @@ cardInfos.forEach((cardInfo) => {
     }
   });
 });
+
+const btnBurger = document.getElementById("btn-Burger");
+const closeNav = document.getElementById("circle-xmark");
+const navContainer = document.getElementById("navCon");
+const circleXmark = document.getElementById("circle-xmark");
+
+btnBurger.addEventListener("click", function (event) {
+  event.stopPropagation();
+
+  circleXmark.style.display = "block";
+  navContainer.style.display = "block";
+  btnBurger.style.display = "none";
+});
+
+closeNav.addEventListener("click", function (event) {
+  event.stopPropagation();
+  circleXmark.style.display = "none";
+  navContainer.style.display = "none";
+  btnBurger.style.display = "block";
+});

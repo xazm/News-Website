@@ -27,6 +27,7 @@ cardInfos.forEach((cardInfo) => {
 
   //readIcon display block when already read
   readIcon.addEventListener("click", function (event) {
+    event.stopPropagation();
     this.style.display = "block"; // for readIcon
   });
 
